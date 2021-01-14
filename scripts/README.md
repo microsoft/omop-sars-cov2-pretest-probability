@@ -33,7 +33,7 @@ If you want to dig into `build_dataset`, you will notice that it itself is basic
 
 Using the dataframe produced by `build_dataset`, training/evaluating the model in different feature/patient classes happens in `analyses.py`
 
-````
+```
 run_analyses(df, identifier='your_analysis_identifier', final=False, setting='your_setting_choice')
 ```
 This is a wrapper which will train a model using a set of features specified by `setting`, then evaluate it on the three different visit types. The `identiifer` here does not _have_ to be the same as your data version, but if you want to remember which data version you used for the analysis, you could put it in here.
